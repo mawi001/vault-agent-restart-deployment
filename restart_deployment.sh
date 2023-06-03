@@ -8,5 +8,4 @@ if [ $? == 0 ]; then
     kubectl rollout restart deploy $DEPLOYMENT
 else
     echo "Rollout already in progress. Skipping"
-    echo "${DEPLOYMENT_STATUS}"
 fi
